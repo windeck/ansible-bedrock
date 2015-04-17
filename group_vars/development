@@ -1,14 +1,14 @@
 mysql_root_password: devpw
 
 wordpress_sites:
-  - site_name: example.dev
+  - site_name: lh.leonadi.de
     site_hosts:
-      - example.dev
-    local_path: '../example.dev' # path targeting local project directory (relative to root/Vagrantfile)
+      - lh.leonadi.de
+    local_path: '../windeck-v2' # path targeting local project directory (relative to root/Vagrantfile)
     user: vagrant
     group: www-data
     site_install: true
-    site_title: Example Site
+    site_title: Windeck Gymnasium
     admin_user: admin
     admin_password: admin
     admin_email: admin@example.dev
@@ -16,8 +16,8 @@ wordpress_sites:
     multisite:
       enabled: false
     env:
-      wp_home: http://example.dev
-      wp_siteurl: http://example.dev/wp
+      wp_home: http://lh.leonadi.de
+      wp_siteurl: http://lh.leonadi.de/wp
       wp_env: development
       db_name: example_dev
       db_user: example_dbuser
